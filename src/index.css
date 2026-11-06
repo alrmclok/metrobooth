@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Design tokens: the theme engine will swap these later */
+:root {
+  --color-bg: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-accent: #f57c00;
+  --radius-main: 12px;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-text: var(--color-text);
+  --color-accent: var(--color-accent);
+  --radius-main: var(--radius-main);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
